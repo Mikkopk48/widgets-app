@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:idgets_app/config/menu/menu_items.dart';
 import 'package:idgets_app/config/theme/app_theme.dart';
-import 'package:idgets_app/presentation/screens/buttons/button_screen.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home_screen';
   const HomeScreen({super.key});
 
   @override
@@ -36,15 +37,16 @@ class _HomeView extends StatelessWidget {
         ),
         body: ListView.builder(
           itemBuilder: (context, index) {
-            final munuItem = appMenuItems[index];
+            final menuItem = appMenuItems[index];
             return ListTile(
-              title: Text(munuItem.title),
-              subtitle: Text(munuItem.subTitle),
-              leading: Icon(munuItem.icon,),
+              title: Text(menuItem.title),
+              subtitle: Text(menuItem.subTitle),
+              leading: Icon(menuItem.icon,),
               trailing: Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context,munuItem.link
-                );
+                // Navigator.pushNamed(context,munuItem.link
+                // );
+                context.push(menuItem.link);
               },
             );
           },
