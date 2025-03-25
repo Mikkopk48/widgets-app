@@ -27,4 +27,10 @@ List<MenuItem> appMenuItems = [
     link: '/cards',
     icon: Icons.smart_button_outlined,
   ),
+  MenuItem(
+    title: 'ProgressIndicators',
+    subTitle: 'Generales y controlados',
+    link: '/progress',
+    icon: Icons.refresh_rounded,
+  ),
 ];
