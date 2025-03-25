@@ -69,11 +69,10 @@ class CustomButton extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
-      child: InkWell(
-        child:  Material(
+      child: Material(
         color:colors.primary,
-      
-          child: Padding(
+        child: const InkWell(
+child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
             child: Text("Hola mundo",style: TextStyle(color: Colors.white),),
           ),
