@@ -28,9 +28,15 @@ List<MenuItem> appMenuItems = [
     icon: Icons.smart_button_outlined,
   ),
   MenuItem(
-    title: 'ProgressIndicators',
+    title: 'Progress Indicators',
     subTitle: 'Generales y controlados',
     link: '/progress',
     icon: Icons.refresh_rounded,
+  ),
+  MenuItem(
+    title: 'Snackbars y dialogos',
+    subTitle: 'Indicadores en pantalla',
+    link: '/snackbar',
+    icon: Icons.info_outline,
   ),
 ];
