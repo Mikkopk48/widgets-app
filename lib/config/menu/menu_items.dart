@@ -23,7 +23,7 @@ List<MenuItem> appMenuItems = [
   ),
   MenuItem(
     title: 'Tarjetas',
-    subTitle: 'Contenedor estulizado',
+    subTitle: 'Contenedor estilizado',
     link: '/cards',
     icon: Icons.smart_button_outlined,
   ),
@@ -38,5 +38,11 @@ List<MenuItem> appMenuItems = [
     subTitle: 'Indicadores en pantalla',
     link: '/snackbar',
     icon: Icons.info_outline,
+  ),
+  MenuItem(
+    title: 'Animated Container',
+    subTitle: 'Stateful widget animado',
+    link: '/animated',
+    icon: Icons.check_box_outline_blank_outlined,
   ),
 ];
