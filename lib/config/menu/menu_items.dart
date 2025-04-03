@@ -16,6 +16,12 @@ class MenuItem {
 
 List<MenuItem> appMenuItems = [
   MenuItem(
+    title: 'Counter Screen',
+    subTitle: 'Riverpod básico',
+    link: '/counter-river',
+    icon: Icons.exposure_plus_1_sharp,
+  ),
+  MenuItem(
     title: 'Botones',
     subTitle: 'Varios botones en flutter',
     link: '/buttons',
@@ -56,5 +62,17 @@ List<MenuItem> appMenuItems = [
     subTitle: 'Un tutorial introductorio',
     link: '/tutorial',
     icon: Icons.accessible_forward,
+  ),
+  MenuItem(
+    title: 'Infinite Scroll',
+    subTitle: 'Listas infinitas',
+    link: '/infinite',
+    icon: Icons.list_alt_rounded,
+  ),
+  MenuItem(
+    title: 'Theme Screen',
+    subTitle: 'pantalla de temas',
+    link: '/theme-changer',
+    icon: Icons.color_lens_outlined,
   ),
 ];

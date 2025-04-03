@@ -93,7 +93,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
                 right: 30,
                 bottom: 30,
                 child: FadeInRight(
-                  from:15,
+                  from: 15,
                   delay: const Duration(seconds: 1),
                   child: FilledButton(
                     onPressed: () {
