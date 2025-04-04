@@ -10,18 +10,18 @@ class CounterScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final int counter = ref.watch(counterProvider);
-    final bool isDark = ref.watch(themeControllerProvider);
+    final bool isDark = ref.watch(isDarkModeProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Counter con Riverpod'),
         actions: [
           IconButton(
             onPressed: () {
-              ref.read(themeControllerProvider.notifier).state = !isDark;
+              ref.read(isDarkModeProvider.notifier).state = !isDark;
             },
             icon:isDark
-            ? Icon(Icons.nightlight_outlined)
-            : Icon(Icons.wb_sunny_outlined),
+            ? const Icon(Icons.nightlight_outlined)
+            : const Icon(Icons.wb_sunny_outlined),
           ),
         ],
       ),
